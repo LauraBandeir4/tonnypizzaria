@@ -21,6 +21,10 @@ li {
     list-style: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Poppins", sans-serif;
     background-color: var(--secondary-color);
@@ -69,8 +73,6 @@ header button {
     font-family: inherit;
 }
 
-main {}
-
 section {
     height: 100vh;
     padding: var(--default-padding)
@@ -105,16 +107,16 @@ section {
     color: var(--primary-color);
 }
 
-.container-pizzas {
+.container-produtos {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.pizza {
+.produtos {
     position: relative;
-    box-shadow: 0 4px 8px #0005;
     display: grid;
+    box-shadow: 0 4px 8px #0005;
     border-radius: 12px;
 }
 
@@ -135,7 +137,7 @@ section {
     transition: 0.6s;
 }
 
-.pizza:hover .add-pizza {
+.produtos:hover .add-pizza {
     opacity: 1;
 }
 
@@ -149,9 +151,9 @@ section {
 }
 
 .container-info {
+    position: absolute;
     height: 36px;
     width: 100%;
-    position: absolute;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -162,8 +164,8 @@ section {
     transition: 0.6s;
 }
 
-.pizza:hover .container-info {
-    bottom: 0px;
+.produtos:hover .container-info {
+    bottom: 0;
 }
 
 .container-info p {
@@ -185,7 +187,73 @@ section {
 }
 
 .cardapio {
-    background-color: purple;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.cardapio-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-bottom: 1px solid var(--primary-color);
+    height: 260px;
+}
+
+.cardapio-item:last-child {
+    border: none;
+}
+
+.section-title {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.section-title h3 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    font-weight: 400;
+}
+
+.item-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-text h4,
+.item-text a {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.bebida {
+    box-shadow: none;
+    transition: 0.5s;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.bebida p {
+    width: 100%;
+}
+
+.bebida .preco {
+    display: flex;
+    color: var(--primary-color);
+}
+
+.bebida .descricao {
+    font-size: 0.6rem;
+}
+
+.bebida:hover {
+    box-shadow: 0 4px 8px #0005;
 }
 
 .servicos {
@@ -195,5 +263,5 @@ section {
 footer {
     /* background-color: rgb(145, 5, 5); */
     height: 1526px;
-    background-color: pink;
+    background-color: var(--secondary-color)
 }
