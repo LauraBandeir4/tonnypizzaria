@@ -377,6 +377,9 @@ footer nav {
     border-top: 2px solid var(--secondary-color);
 }
 
+
+/* Responsividade tablet */
+
 @media (max-width: 1024px) {
      :root {
         --default-padding: 0 48px;
@@ -434,7 +437,7 @@ footer nav {
     .servicos-item p {
         width: 330px;
     }
-    .footer nav {
+    footer nav {
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
@@ -457,6 +460,9 @@ footer nav {
     }
 }
 
+
+/* responsividade mobile */
+
 @media (max-width: 768px) {
      :root {
         --default-padding: 0 48px;
@@ -464,65 +470,63 @@ footer nav {
     header {
         left: 0;
         top: 64px;
+        gap: 32px;
         position: absolute;
         background-color: transparent;
     }
-    header menu {
+    .header menu {
         height: 64px;
-        width: 100%;
+        width: 100vh;
         position: fixed;
         left: 0;
         bottom: 0;
-        background-color: var(--primary-color);
+        background-color: blue;
         color: #fff;
         justify-content: space-evenly;
     }
     .header li:hover {
         color: var(--primary-color);
     }
-    .main {
+    main {
         display: flex;
         flex-direction: column;
         justify-content: end;
         align-items: end;
     }
-    .cardapio-item a {
-        display: none;
+    .container-top h2 {
+        position: relative;
+        bottom: 80px;
+        font-size: 1.50rem;
+        font-weight: 500;
+        font-style: italic;
+        width: 273px;
+        display: flex;
     }
-    .servicos-container {
-        flex-direction: column;
-        gap: 48px;
-    }
-    .servicos-item {
-        justify-content: space-evenly;
-        height: 260px;
-        width: 313px;
-        flex-wrap: wrap;
-    }
-    .servicos-item p {
-        display: none;
-    }
-    .footer {
+    footer {
         height: 100vh;
         width: 100vw;
     }
-    .footer nav {
-        flex-direction: column;
+    footer nav {
+        flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: right;
         align-items: center;
         height: 400px;
         gap: 32px;
     }
-    .nav-item:nth-child(2),
-    .nav-item:nth-child(3),
     .nav-item:nth-child(4) {
-        display: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        align-items: end;
     }
     .social li {
         justify-content: end;
     }
     .copy-right {
         margin: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
