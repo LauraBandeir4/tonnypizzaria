@@ -541,10 +541,15 @@ footer nav {
     #cardapio.cardapio {
         width: 320px;
     }
+    .cardapio-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .cardapio-item a {
         display: none;
     }
-    .cardapio .h4 {
+    .section-title {
         display: flex;
         justify-content: center;
         align-items: center;
