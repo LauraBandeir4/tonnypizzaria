@@ -477,6 +477,7 @@ footer nav {
         left: 0;
         top: 64px;
         gap: 32px;
+        margin-top: -20px;
         position: absolute;
         background-color: transparent;
     }
@@ -485,12 +486,6 @@ footer nav {
         width: 120px;
         display: flex;
         justify-content: right;
-    }
-    header img {
-        display: none;
-    }
-    header button {
-        display: none;
     }
     header menu {
         gap: 0;
@@ -527,6 +522,21 @@ footer nav {
         justify-content: end;
         align-items: end;
         width: 100%;
+    }
+    main h2 {
+        top: 273px;
+        left: 12px;
+        font-size: 2rem;
+        font-style: italic;
+        font-weight: 500;
+        color: #F7E5D8;
+    }
+    main span {
+        top: 273px;
+        left: 12px;
+        font-size: 2rem;
+        font-style: italic;
+        font-weight: 500;
     }
     .home {
         height: 568px;
