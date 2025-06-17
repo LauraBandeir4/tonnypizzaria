@@ -486,6 +486,12 @@ footer nav {
         display: flex;
         justify-content: right;
     }
+    header img {
+        display: none;
+    }
+    header button {
+        display: none;
+    }
     header menu {
         gap: 0;
         height: 64px;
@@ -506,6 +512,9 @@ footer nav {
     header li:hover {
         color: var(--primary-color);
     }
+    .container-top {
+        width: 320px;
+    }
     .container-top img {
         display: none;
     }
@@ -517,13 +526,20 @@ footer nav {
         flex-direction: column;
         justify-content: end;
         align-items: end;
-        width: 320px;
+        width: 100%;
     }
     .home {
         height: 568px;
+        background-image: url(./img/bgMobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: grid;
     }
     .cardapio {
         height: 982px;
+    }
+    #cardapio.cardapio {
+        width: 320px;
     }
     .cardapio-item a {
         display: none;
@@ -552,6 +568,11 @@ footer nav {
     .servicos-item {
         height: 260px;
         width: 313px;
+        font-display: flex;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -20px;
     }
     .servicos-item p {
         display: none;
@@ -563,7 +584,8 @@ footer nav {
     footer nav {
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: right;
+        display: flex;
+        justify-content: center;
         align-items: center;
         height: 183px;
         width: 248px;
